@@ -15,7 +15,7 @@ public class RollerCoaster extends Attraction implements ISecurity, IReviewed, I
     }
 
     public boolean isAllowedTo(Visitor visitor) {
-        return (visitor.getAge() > 12 && visitor.getHeight() > 145);
+        return (visitor.getAge() > 12 && visitor.getHeight() > 1.45);
     }
 
     public double defaultPrice() {
@@ -23,7 +23,7 @@ public class RollerCoaster extends Attraction implements ISecurity, IReviewed, I
     }
 
     public double priceFor(Visitor visitor) {
-        if (visitor.getHeight() > 200) {
+        if (visitor.getHeight() > 2.00) {
             return defaultPrice() * 2;
         } else {
             return defaultPrice();

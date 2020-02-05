@@ -64,7 +64,7 @@ public class ThemeParkTest {
 
     @Test
     public void visitorCanVisit(){
-        visitor1 = new Visitor(18, 172, 55);
+        visitor1 = new Visitor(18, 1.72, 55);
         themepark.visit(visitor1, dodgems);
         attractions.add(dodgems);
         assertEquals(50.5, visitor1.getMoney(),0);
@@ -80,7 +80,7 @@ public class ThemeParkTest {
 
     @Test
     public void canGetAllAllowedFor(){
-        visitor2 = new Visitor(11, 120, 40);
+        visitor2 = new Visitor(11, 1.20, 40);
         themepark.addReview(tobaccoStall);
         themepark.addReview(candyflossStall);
         themepark.addReview(park);

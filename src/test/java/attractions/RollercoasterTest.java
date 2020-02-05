@@ -16,9 +16,9 @@ public class RollercoasterTest {
     @Before
     public void setUp() {
         rollerCoaster = new RollerCoaster("Blue Ridge", 10);
-        visitor1 = new Visitor(13, 146, 20);
-        visitor2 = new Visitor(12, 145, 20);
-        visitor3 = new Visitor(18, 201, 40);
+        visitor1 = new Visitor(13, 1.46, 20);
+        visitor2 = new Visitor(12, 1.45, 20);
+        visitor3 = new Visitor(18, 2.01, 40);
     }
 
     @Test
